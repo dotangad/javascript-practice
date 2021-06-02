@@ -9,7 +9,9 @@
     "testObjectsSolutions": "jest /objects/solutions/",
     "testArrays": "jest /arrays/exercises/",
     "testArraysSolutions": "jest /arrays/solutions/",
-    "lint": "eslint \"*/**\""
+    "lint": "eslint \"*/**\"",
+    "testArraysWatch": "jest /arrays/exercises --watch --coverage",
+    "testObjectsWatch": "jest /objects/exercises --watch --coverage"
   },
   "jest": {
     "testEnvironment": "node",
@@ -31,6 +33,5 @@
     "eslint-config-airbnb-base": "^14.1.0",
     "eslint-plugin-import": "^2.20.2",
     "jest": "^25.5.2"
-  },
-  "dependencies": {}
+  }
 }
