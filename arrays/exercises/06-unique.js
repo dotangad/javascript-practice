@@ -5,6 +5,6 @@
  * @param {Array<string | number>} array - Array of primitive data types
  * @returns {Array}
  */
-export const unique = (array) => {
-  throw new Error(`put your solution here ${array}`);
-};
+export const unique = (array) => array.filter((value, i, arr) => (arr.filter((x) => x === value).length === 1
+  ? true
+  : arr.slice(0, i).filter((x) => x === value).length === 0));

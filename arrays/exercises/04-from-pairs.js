@@ -6,5 +6,7 @@
  * @returns {Array}
  */
 export const fromPairs = (array) => {
-  throw new Error(`put your solution here ${array}`);
+  const obj = {};
+  array.forEach(([key, val]) => (obj[key] = val));
+  return obj;
 };

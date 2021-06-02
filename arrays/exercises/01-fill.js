@@ -6,6 +6,4 @@
  * @param {?} value - value to fill
  * @returns {Array}
  */
-export const fill = (arraySize, value) => {
-  throw new Error(`put your solution here ${arraySize}, ${value}`);
-};
+export const fill = (arraySize, value) => Array(arraySize).fill(value);

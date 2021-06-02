@@ -5,6 +5,6 @@
  * @param {Array} array - Array of any elements
  * @returns {Array}
  */
-export const reverse = (array) => {
-  throw new Error(`put your solution here ${array}`);
-};
+
+// Array.prototype.reverse() - reverses array in place
+export const reverse = (array) => array.map((_, i, arr) => arr[arr.length - 1 - i]);
